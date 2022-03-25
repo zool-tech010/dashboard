@@ -1,0 +1,281 @@
+html,body {
+    direction:rtl!important;
+    text-align:right!important;
+    font-family: 'Cairo', sans-serif;
+    font-weight:500;
+    padding:0!important;
+}
+
+/**********8 SAIDE BAR *********/
+.layout-fixed .main-sidebar {
+    left:auto;
+    right:0;
+}
+
+body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .content-wrapper, body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-footer, body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-header {
+    margin-left:0;
+    margin-right:250px;
+}
+.nav-sidebar .nav-link>.right, .nav-sidebar .nav-link>p>.right {
+    right:auto!important;
+    left:1rem;
+}
+.small-box .icon>i {
+    right:auto;
+    left:15px;
+}
+
+.user-panel .info {
+    padding:5px 10px 5px 5px
+}
+.user-panel .image {
+    padding-left:0;
+    padding-right:0.8rem;
+}
+.input-group>.input-group-append>.btn, .input-group>.input-group-append>.input-group-text, .input-group>.input-group-prepend:first-child>.btn:not(:first-child), .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child), .input-group>.input-group-prepend:not(:first-child)>.btn, .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
+    border-radius: .25rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.input-group:not(.has-validation)>.custom-file:not(:last-child) .custom-file-label::after, .input-group:not(.has-validation)>.custom-select:not(:last-child), .input-group:not(.has-validation)>.form-control:not(:last-child) {
+    border-radius: .25rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+.breadcrumb-item + .breadcrumb-item {
+    padding-right:.5rem;
+    padding-left:0;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    float:right;
+    padding-left:.5rem;
+    padding-right:0;
+}
+
+td,th {
+    vertical-align: middle!important;;
+    font-size:12px;
+}
+.custom-file-input:lang(en)~.custom-file-label::after {
+    content:"اختار الملف"
+}
+
+.file-uploaded {
+    display:inline-block;
+    padding-left:1rem;
+}
+.file-uploaded span  {
+    left: 10px;
+    top: -6px;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.text-primary {
+    color:#1b5cca!important
+}
+.btn-primary {
+    background-color:#fd7e14!important;
+    border:1px solid #fd7e14!important;
+    color:#fff;
+    padding-right:40px;
+    padding-left:40px;
+    font-weight:bold;
+    font-size:14px;
+}
+.btn-primary:hover {
+    
+}
+/* .card-header {
+    background-color:#1b5cca!important
+} */
+@media(max-width:991px) {
+    body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .content-wrapper, body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-footer, body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-header {
+        margin-right:0;
+    }
+}
+@media (min-width: 992px)
+{
+    .sidebar-mini.sidebar-collapse .content-wrapper, .sidebar-mini.sidebar-collapse .main-footer, .sidebar-mini.sidebar-collapse .main-header {
+        margin-left:0!important;
+        margin-right: 4.6rem!important;
+    }
+}
+@media (min-width: 768px)
+{
+    body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .content-wrapper, body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-footer, body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-header {
+        margin-left:0;
+        transition: margin-right .3s ease-in-out;
+        margin-right: 250px;
+    }
+}
+
+/* .sidebar-collapse .main-sidebar, .sidebar-collapse .main-sidebar::before {
+    margin-left: 0;
+    margin-right: -250px;
+} */
+
+
+
+.main-sidebar, .main-sidebar::before {
+    margin-left:0;
+    margin-right:0;
+    transition: margin-right .3s ease-in-out,width .3s ease-in-out;
+    width: 250px;
+}
+
+/* @media (max-width: 991px)
+{
+    .sidebar-collapse .main-sidebar, .sidebar-collapse .main-sidebar::before {
+        margin-left: none;
+        margin-right: -250px;
+    }
+
+} */
+@media (max-width: 767.98px)
+
+{
+    .main-sidebar, .main-sidebar::before {
+        margin-right:-250px;
+    }
+    .sidebar-collapse .main-sidebar, .sidebar-collapse .main-sidebar::before {
+        margin-left: none;
+        margin-right: -250px;
+    }
+    .sidebar-open .main-sidebar, .sidebar-open .main-sidebar::before {
+        margin-right: 0;
+    }
+}
+
+label {
+    font-size:13px!important;
+}
+
+/* .table-wrapper{
+    overflow:auto;
+} */
+.table-student{
+    min-width:1500px;
+}
+.table-st {
+    min-width:1000px;
+}
+
+.table-el {
+    min-width:500px;
+}
+.download-file {
+    background:#ddd;
+    color:#202020;
+    display:inline-block;
+    padding:5px 10px;
+}
+
+.custom-control {
+    padding-left:0;
+    padding-right:1.5rem;
+}
+.custom-control-label::before,
+.custom-control-label::after{
+    right:-1.5rem;
+    left:auto
+}
+
+.custom-switch .custom-control-label{
+    padding-right:10px;
+    padding-top:2px;
+}
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+    -webkit-transform: translateX(-0.75rem);
+    transform: translateX(-0.75rem);
+}
+.table-wrapper{
+    direction: ltr!important;
+}
+.table,
+.table td,
+.table th {
+    direction: rtl!important;
+}
+
+.dataTables_info {
+   text-align: left;
+}
+.pagination {
+    direction: rtl;
+}
+.dataTables_filter {
+    direction: rtl!important;
+    text-align: right!important;
+}
+.dataTables_filter input {
+    margin-right:10px;
+}
+
+btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
+    border-radius: 0.2rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn:not(:first-child) {
+    border-radius: 0.2rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right:4px;
+}
+.btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn:not(:first-child){
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.input-group>.input-group-append>.btn, .input-group>.input-group-append>.input-group-text, .input-group>.input-group-prepend:first-child>.btn:not(:first-child), .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child), .input-group>.input-group-prepend:not(:first-child)>.btn, .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
+    /* border-radius: .25rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; */
+    border:1px solid #ced4da;
+    border-right:0;
+}
+
+.input-group:not(.has-validation)>.custom-file:not(:last-child) .custom-file-label::after, .input-group:not(.has-validation)>.custom-select:not(:last-child), .input-group:not(.has-validation)>.form-control:not(:last-child) {
+    border:1px solid #ced4da;
+    border-left:0;
+}
+
+[class*=icheck-]>input:first-child+input[type=hidden]+label::before, [class*=icheck-]>input:first-child+label::before {
+    margin-left:0;
+    margin-right:56px
+}
+
+[class*=icheck-]>input:first-child:checked+input[type=hidden]+label::after, [class*=icheck-]>input:first-child:checked+label::after {
+    left:-7px;
+}
+
+
+.btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn:not(:first-child) {
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.note-editor .note-toolbar .note-color .dropdown-toggle, .note-popover .popover-content .note-color .dropdown-toggle{
+    padding-right: 5px;
+    padding-left:0;
+}
+
